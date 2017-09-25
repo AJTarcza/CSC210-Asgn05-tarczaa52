@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="edu.sunyulster.tarczamy.carpayment.MainActivity">
+
+    <EditText
+        android:id="@+id/carPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginLeft="-200dp"
+        android:layout_row="0"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <EditText
+        android:id="@+id/downPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginLeft="-200dp"
+        android:layout_row="1"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <EditText
+        android:id="@+id/interestRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginLeft="-200dp"
+        android:layout_row="2"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <EditText
+        android:id="@+id/loanPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginLeft="-200dp"
+        android:layout_row="3"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <TextView
+        android:id="@+id/carPriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="0"
+
+        android:text="Car Price" />
+
+    <TextView
+        android:id="@+id/downPaymentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text="Down Payment" />
+
+    <TextView
+        android:id="@+id/interestRateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:text="Interest Rate" />
+
+    <TextView
+        android:id="@+id/loanPeriodLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:text="Years" />
+
+    <Button
+        android:id="@+id/calculate"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="50dp"
+        android:layout_row="4"
+        android:elevation="0dp"
+        android:text="Calculate"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/monthlyPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_row="5"
+        android:text="$"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/monthlyPaymentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginTop="10dp"
+        android:layout_row="5"
+        android:text="Monthly Payment"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/totalPaymentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="6"
+        android:layout_marginTop="20dp"
+        android:text="Total Payment" />
+
+    <TextView
+        android:id="@+id/totalPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_row="6"
+        android:text="$" />
+
+</GridLayout>
